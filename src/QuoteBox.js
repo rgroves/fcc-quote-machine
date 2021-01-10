@@ -15,6 +15,10 @@ export default function QuoteBox() {
     setQuoteDetails(randomQuote);
   };
 
+  const fullQuoteText = `${quoteDetails.text} — ${quoteDetails.author}`;
+  const encodedQuote = encodeURIComponent(fullQuoteText);
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodedQuote}`;
+
   return (
     <div id="quote-box">
       <div id="text">{quoteDetails.text}</div>
@@ -22,7 +26,7 @@ export default function QuoteBox() {
       <button id="new-quote" onClick={handleNewQuoteClick}>
         New Quote
       </button>
-      <a id="tweet-quote" heref="#">
+      <a id="tweet-quote" href={tweetUrl}>
         Tweet Quote
       </a>
     </div>
