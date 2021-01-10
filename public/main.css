@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto&display=swap");
+
 body {
   margin: 1em;
   padding: 0;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 #root {

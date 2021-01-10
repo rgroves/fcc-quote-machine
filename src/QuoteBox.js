@@ -21,7 +21,9 @@ export default function QuoteBox() {
 
   return (
     <div id="quote-box">
-      <div id="text">{quoteDetails.text}</div>
+      <div id="text" class="quote">
+        {quoteDetails.text}
+      </div>
       <div id="author">— {quoteDetails.author}</div>
       <button id="new-quote" onClick={handleNewQuoteClick}>
         New Quote
