@@ -8,3 +8,9 @@
 .quote {
   font-family: "Comfortaa", cursive;
 }
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}

@@ -25,12 +25,14 @@ export default function QuoteBox() {
         {quoteDetails.text}
       </div>
       <div id="author">— {quoteDetails.author}</div>
-      <button id="new-quote" onClick={handleNewQuoteClick}>
-        New Quote
-      </button>
-      <a id="tweet-quote" href={tweetUrl}>
-        Tweet Quote
-      </a>
+      <div class="controls">
+        <a id="tweet-quote" href={tweetUrl}>
+          Tweet Quote
+        </a>
+        <button id="new-quote" onClick={handleNewQuoteClick}>
+          New Quote
+        </button>
+      </div>
     </div>
   );
 }
