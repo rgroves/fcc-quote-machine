@@ -24,7 +24,9 @@ export default function QuoteBox() {
       <div id="text" className="quote">
         {quoteDetails.text}
       </div>
-      <div id="author">— {quoteDetails.author}</div>
+      <div id="author" className="author">
+        — {quoteDetails.author}
+      </div>
       <div className="controls">
         <a id="tweet-quote" href={tweetUrl}>
           Tweet Quote

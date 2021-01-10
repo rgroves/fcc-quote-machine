@@ -9,6 +9,11 @@
   font-family: "Comfortaa", cursive;
 }
 
+.author {
+  margin-top: 0.5em;
+  text-align: right;
+}
+
 .controls {
   display: flex;
   justify-content: space-between;
