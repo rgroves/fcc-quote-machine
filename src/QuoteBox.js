@@ -21,11 +21,11 @@ export default function QuoteBox() {
 
   return (
     <div id="quote-box">
-      <div id="text" class="quote">
+      <div id="text" className="quote">
         {quoteDetails.text}
       </div>
       <div id="author">— {quoteDetails.author}</div>
-      <div class="controls">
+      <div className="controls">
         <a id="tweet-quote" href={tweetUrl}>
           Tweet Quote
         </a>
