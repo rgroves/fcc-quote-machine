@@ -1,3 +1,5 @@
+let previousIdx = -1;
+
 function getQuote() {
   const quotes = [
     {
@@ -23,10 +25,18 @@ function getQuote() {
     },
   ];
 
-  const randomIdx = Math.floor(Math.random() * quotes.length);
+  let randomIdx;
+
+  do {
+    randomIdx = Math.floor(Math.random() * quotes.length);
+    console.log("looping for a new idx, new idx is:" + randomIdx);
+  } while (randomIdx === previousIdx);
+
+  previousIdx = randomIdx;
+
+  console.log({ randomIdx });
   const chosenQuote = quotes[randomIdx];
 
-  console.log();
   return chosenQuote;
 }
 
